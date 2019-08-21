@@ -1,5 +1,6 @@
-# Structures-using-Vue
-Here in this repository are several frameworks with Framework Vue.
+# Estrutura e breve explicação do framework Vue 
+
+Aqui estão diversas estruturas usando o Framework Vue, também tem uma breve explicação do uso do Framework 
 
 ## (Detalhe Importante um)
 No Layout do Vue é necessário ter essa estrutura:
