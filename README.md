@@ -13,8 +13,29 @@ No Layout do Vue é necessário ter essa estrutura:
 //aqui vai scripts
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
 /*aqui vai estilo*/
 </style>
-````
+```
+## (Detalhe importante dois)
+
+Para que tenha vários componentes na tag template é necessário colocar uma div como o exemplo abaixo:
+
+```html
+<template>
+ <div>
+  <h1>Uma lista</h1>
+  <ul>
+    <li><a href="">Link</a></li>
+  <ul>
+ </div>
+</template>
+
+<script>
+//aqui vai scripts
+</script>
+<style>
+/*aqui vai estilo*/
+</style>
+```
+
