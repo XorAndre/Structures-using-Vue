@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue.js</title>
+</head>
+<body>
+    <div id="app">
+        <p>{{ mensagem }}</p>
+        <inicio  mensagem= "uma frase qualquer"></inicio>
+    </div>
+    <script src="https://unpkg.com/vue"></script>
+
+     <template id="frase">
+        <div>
+            <p>Meu nome é {{ nome }}</p>
+            <p>{{ mensagem }}</p>
+        </div>
+     </template>
+    <script>
+        Vue.component('inicio', {
+            data: function () {
+                return { nome: "Andre" }
+            },                  
+            props: ['mensagem'],
+            template: '#frase'
+        })
+        new Vue({
+            el: '#app',
+            data: {
+                mensagem: 'Uma frase qualquer'
+            }
+        })
+
+       
+        
+    </script>
+</body>
+</html>
